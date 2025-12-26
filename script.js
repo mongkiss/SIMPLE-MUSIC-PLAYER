@@ -31,7 +31,7 @@ loadSong(songs[songIndex]);
 // Update song details
 function loadSong(song) {
   title.innerText = song;
-  audio.src = `music/${song}.mp3`;
+  audio.src = `MUSIC/${song}.mp3`;
   cover.src = `IMAGE/${song}.jpg`;
 }
 // Play song
@@ -177,3 +177,4 @@ audio.addEventListener("ended", nextSong);
 
 // Time of song
 audio.addEventListener("timeupdate", DurTime);
+
